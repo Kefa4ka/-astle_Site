@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Екскурсії та ціни - Кам'янець-Подільський замок</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <img src="https://via.placeholder.com/50x50.png?text=Logo" alt="Логотип замку">
+            </div>
+            <ul>
+                <li><a href="index.html"><i class="fas fa-home"></i> Головна</a></li>
+                <li><a href="history.html"><i class="fas fa-book"></i> Історія</a></li>
+                <li><a href="gallery.html"><i class="fas fa-images"></i> Фотоальбом</a></li>
+                <li><a href="location.html"><i class="fas fa-map-marker-alt"></i> Розташування</a></li>
+                <li><a href="tours.html" class="active"><i class="fas fa-ticket-alt"></i> Екскурсії та ціни</a></li>
+            </ul>
+            <div class="menu-toggle">
+                <i class="fas fa-bars"></i>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section id="tours-hero" class="parallax">
+            <div class="hero-content">
+                <h1>Екскурсії та ціни</h1>
+                <p>Відкрийте для себе таємниці Кам'янець-Подільського замку</p>
+            </div>
+        </section>
+
+        <section id="tour-types">
+            <h2>Види екскурсій</h2>
+            <div class="tour-grid">
+                <div class="tour-item">
+                    <i class="fas fa-walking"></i>
+                    <h3>Стандартна екскурсія</h3>
+                    <p>Оглядова екскурсія замком з професійним гідом.</p>
+                    <p class="price">Ціна: 100 грн/особа</p>
+                    <p class="duration">Тривалість: 1.5 години</p>
+                </div>
+                <div class="tour-item">
+                    <i class="fas fa-theater-masks"></i>
+                    <h3>Театралізована екскурсія</h3>
+                    <p>Інтерактивна екскурсія з елементами історичної реконструкції.</p>
+                    <p class="price">Ціна: 150 грн/особа</p>
+                    <p class="duration">Тривалість: 2 години</p>
+                </div>
+                <div class="tour-item">
+                    <i class="fas fa-moon"></i>
+                    <h3>Нічна екскурсія</h3>
+                    <p>Захоплююча екскурсія при світлі ліхтарів.</p>
+                    <p class="price">Ціна: 200 грн/особа</p>
+                    <p class="duration">Тривалість: 2 години</p>
+                </div>
+                <div class="tour-item">
+                    <i class="fas fa-camera"></i>
+                    <h3>Фотосесія в замку</h3>
+                    <p>Професійна фотосесія в історичних інтер'єрах.</p>
+                    <p class="price">Ціна: 500 грн/година</p>
+                    <p class="duration">Тривалість: за домовленістю</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="prices">
+            <h2>Ціни на квитки</h2>
+            <table class="price-table">
+                <thead>
+                    <tr>
+                        <th>Категорія</th>
+                        <th>Ціна</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Дорослі</td>
+                        <td>80 грн</td>
+                    </tr>
+                    <tr>
+                        <td>Діти (6-16 років)</td>
+                        <td>40 грн</td>
+                    </tr>
+                    <tr>
+                        <td>Студенти</td>
+                        <td>60 грн</td>
+                    </tr>
+                    <tr>
+                        <td>Пенсіонери</td>
+                        <td>60 грн</td>
+                    </tr>
+                    <tr>
+                        <td>Діти до 6 років</td>
+                        <td>Безкоштовно</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <section id="booking">
+            <h2>Замовлення екскурсії</h2>
+            <form class="booking-form">
+                <div class="form-group">
+                    <label for="name">Ім'я:</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="phone">Телефон:</label>
+                    <input type="tel" id="phone" name="phone" required>
+                </div>
+                <div class="form-group">
+                    <label for="tour-type">Тип екскурсії:</label>
+                    <select id="tour-type" name="tour-type" required>
+                        <option value="">Оберіть тип екскурсії</option>
+                        <option value="standard">Стандартна екскурсія</option>
+                        <option value="theatrical">Театралізована екскурсія</option>
+                        <option value="night">Нічна екскурсія</option>
+                        <option value="photo">Фотосесія в замку</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="date">Дата:</label>
+                    <input type="date" id="date" name="date" required>
+                </div>
+                <div class="form-group">
+                    <label for="participants">Кількість учасників:</label>
+                    <input type="number" id="participants" name="participants" min="1" required>
+                </div>
+                <button type="submit" class="submit-btn">Замовити екскурсію</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>Контакти</h3>
+                <p><i class="fas fa-map-marker-alt"></i> вул. Замкова, 1, м. Кам'янець-Подільський</p>
+                <p><i class="fas fa-phone"></i> +38 (03849) 5-13-51</p>
+                <p><i class="fas fa-envelope"></i> kp.castle@gmail.com</p>
+            </div>
+            <div class="footer-section">
+                <h3>Соціальні мережі</h3>
+                <a href="#" class="social-icon"><i class="fab fa-facebook"></i></a>
+                <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+                <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
+            </div>
+            <div class="footer-section">
+                <h3>Швидкі посилання</h3>
+                <ul>
+                    <li><a href="index.html">Головна</a></li>
+                    <li><a href="history.html">Історія</a></li>
+                    <li><a href="gallery.html">Фотоальбом</a></li>
+                    <li><a href="location.html">Розташування</a></li>
+                    <li><a href="tours.html">Екскурсії та ціни</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2023 Кам'янець-Подільський замок. Всі права захищені.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
